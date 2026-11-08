@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GPS Location Tracker - Developed by Qamar Mushtaq</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>📍 GPS Location Tracker</h1>
+    <p>Developed by Qamar Mushtaq</p>
+    <span class="badge">Live GPS • Grid Reference • Map</span>
+  </div>
+  <div class="card">
+    <button onclick="getLocation()" id="btn">📡 Get My Current Location</button>
+    <p class="note">Allow Location Permission when browser asks. Works on Mobile + Computer.</p>
+    <div class="grid">
+      <div class="box"><span>Latitude</span><b id="lat">--</b></div>
+      <div class="box"><span>Longitude</span><b id="lng">--</b></div>
+      <div class="box"><span>Accuracy</span><b id="acc">--</b></div>
+      <div class="box"><span>Altitude</span><b id="alt">--</b></div>
+      <div class="box"><span>Speed</span><b id="speed">--</b></div>
+      <div class="box"><span>Grid Reference</span><b id="grid">--</b></div>
+    </div>
+    <div class="mapbox">
+      <p><b>Google Maps Link:</b></p>
+      <a id="mapLink" href="#" target="_blank">Click Get Location First</a>
+      <p><b>Plus Code:</b> <span id="plus">--</span></p>
+    </div>
+    <div class="btns">
+      <button onclick="copyLocation()">📋 Copy Location</button>
+      <button onclick="openMap()">🗺️ Open in Google Maps</button>
+    </div>
+    <p id="status"></p>
+  </div>
+  <p class="footer">Developed by Qamar Mushtaq | HTML + CSS + JavaScript + Geolocation API</p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
